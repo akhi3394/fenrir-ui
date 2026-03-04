@@ -1,0 +1,136 @@
+.dashboard-container.dark-theme {
+    background-color: #0b0d0e;
+    color: white;
+}
+
+.dark-theme .header-title {
+    color: white;
+}
+
+.dark-theme .breadcrumbs {
+    color: #666;
+}
+
+.dark-theme .export-report-btn {
+    background: transparent;
+    border-color: #1c1f20;
+    color: white;
+}
+
+.dark-theme .stop-scan-btn {
+    background: #2a1215;
+    color: #f44336;
+    border-color: #42181c;
+}
+
+.dark-theme .info-bar {
+    border-color: #1c1f20;
+}
+
+.dark-theme .info-item .value {
+    color: white;
+}
+
+.dark-theme .last-sync {
+    color: #009688;
+    margin-left: auto;
+}
+
+.dark-theme .severity-card {
+    background: #0f1112;
+    box-shadow: none;
+    border: 1px solid #1c1f20;
+}
+
+.dark-theme .stat-value {
+    color: white;
+}
+
+.dark-theme .search-box {
+    background: #0f1112;
+    border-color: #1c1f20;
+}
+
+.dark-theme .search-box input {
+    background: transparent;
+    color: white;
+}
+
+.dark-theme .btn-secondary {
+    background: #0f1112;
+    border-color: #1c1f20;
+    color: #888;
+}
+
+.dark-theme .table-container {
+    background: #0f1112;
+    border: 1px solid #1c1f20;
+    box-shadow: none;
+}
+
+.dark-theme .scans-table th {
+    border-bottom-color: #1c1f20;
+    color: #666;
+}
+
+.dark-theme .scans-table td {
+    border-bottom-color: #1c1f20;
+    color: #ccc;
+}
+
+.dark-theme .scans-table tr:hover td {
+    background: #1c1f20;
+}
+
+.dark-theme .status-badge.completed {
+    background: rgba(0, 150, 136, 0.1);
+    color: #009688;
+}
+
+.dark-theme .progress-bar {
+    background: #1c1f20;
+}
+
+.dark-theme .progress-text {
+    color: #888;
+}
+
+@media (max-width: 1200px) {
+    .severity-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 16px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .info-bar {
+        flex-wrap: wrap;
+        gap: 16px 24px;
+    }
+
+    .severity-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .list-controls {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .search-box {
+        max-width: none;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+}
